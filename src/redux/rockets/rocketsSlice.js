@@ -1,13 +1,13 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-	rockets: [],
+  rockets: [],
 };
 
 const rocketsSlice = createSlice({
-	name: "rockets",
-	initialState,
-	reducers: {},
+  name: 'rockets',
+  initialState,
+  reducers: {},
 });
 
 export const rocketsActions = rocketsSlice.actions;
