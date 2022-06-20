@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
-import Rockets from './components/Rockets';
-import MyProfile from './components/MyProfile';
-import Missions from './components/Missions';
+import Rockets from './components/pages/Rockets';
+import MyProfile from './components/pages/MyProfile';
+import Missions from './components/pages/Missions';
 
 const App = () => (
-  <main className="App">
+  <>
     <BrowserRouter>
       <Header />
       <Routes>
@@ -16,6 +16,6 @@ const App = () => (
         <Route path="/myProfile" element={<MyProfile />} />
       </Routes>
     </BrowserRouter>
-  </main>
+  </>
 );
 export default App;
