@@ -9,10 +9,15 @@ export const fetchMissions = createAsyncThunk(
   'missions/fetchMissions',
   async () => {
     const response = await fetch(missionsURL);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-    }
+    const data = await response.json();
+    const missionsData = data.map((mission) => ({
+      id: mission.mission_id,
+      name: mission.mission_name,
+      description: mission.description,
+    }));
+    console.log(missionsData);
+
+    return missionsData;
   },
 );
 
