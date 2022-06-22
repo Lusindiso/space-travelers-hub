@@ -1,0 +1,18 @@
+.rocket {
+	display: flex;
+	max-width: 90vw;
+	margin: 2rem auto;
+}
+
+.rocket img {
+	width: 20vw;
+	margin: 1rem 2rem;
+}
+
+.rocket button {
+	padding: 1rem 2rem;
+	border: none;
+	background-color: #24a0ed;
+	border-radius: 10px;
+	color: white;
+}
