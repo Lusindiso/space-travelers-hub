@@ -19,7 +19,11 @@ const rocketsSlice = createSlice({
       }));
     },
     toggleReserved(state, action) {
-      state.rockets[action.payload].reserved = !state.rockets[action.payload].reserved;
+      state.rockets.map((rocket) => {
+        if (rocket.id === action.payload) {
+          rocket.reserved = !rocket.reserved;
+        }
+      });
     },
   },
 });

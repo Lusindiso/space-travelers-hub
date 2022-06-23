@@ -10,11 +10,13 @@ const Rockets = () => {
   }, [dispatch]);
 
   const rockets = useSelector((state) => state.rockets.rockets);
+  console.log(rockets);
   return (
     <main>
       {rockets.map((rocket) => (
         <Rocket
           key={rocket.id}
+          id={rocket.id}
           name={rocket.name}
           description={rocket.description}
           src={rocket.image[0]}
