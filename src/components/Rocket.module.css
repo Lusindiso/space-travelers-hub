@@ -18,10 +18,29 @@
   max-width: 850px;
 }
 
-.rocket button {
+.rocket span {
+  background-color: #18a2b8;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.rocket .book {
+  font-size: 1.1rem;
   padding: 1rem 2rem;
   border: none;
   background-color: #007bff;
   border-radius: 5px;
   color: white;
+}
+
+.rocket .cancel {
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border: 1px solid #6d757d;
+  background-color: white;
+  border-radius: 5px;
+  color: #6d757d;
 }
