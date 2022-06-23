@@ -6,13 +6,15 @@ import { fetchMissions, JoinMission } from '../../redux/missions/missionSlice';
 
 const MissionsList = () => {
   const dispatch = useDispatch();
-  const { missions } = useSelector((state) => state.mission);
+  const missions = useSelector((state) => state.mission);
   console.log(missions);
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch, fetchMissions]);
+
   const handleMisionReservation = ({ target }) => {
     const { id } = target;
+    console.log({ target });
     dispatch(JoinMission(id));
   };
   return (
