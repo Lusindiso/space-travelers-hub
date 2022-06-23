@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import planet from '../images/planet.png';
+import './Header.css';
 
 const Header = () => (
   <header className="header">
-    <div className="navbar">
-      <nav>
-        <ul className="flex">
+    <div className="navbar-space">
+      <nav className="space-btw">
+        <ul className="flex-space">
           <div className="left-nav">
             <li>
               <img alt="logo" className="logo" src={planet} />
