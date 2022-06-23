@@ -4,39 +4,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-.left-nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.right-nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.right-nav a {
-  color: blue;
-}
-
-.missions {
-  border-right: solid black;
-  padding-right: 1rem;
-}
-
-.rockets {
-  border-right: solid black;
-  padding-right: 1rem;
-}
-
-header {
-  border-bottom: 1px solid rgb(119 114 114);
-}
