@@ -6,11 +6,9 @@ import classes from './Rocket.module.css';
 const Rocket = ({
   id,
   src, name, description, reserved,
-}) =>
-{
+}) => {
   const dispatch = useDispatch();
-  const toggleHandler = () =>
-  {
+  const toggleHandler = () => {
     dispatch(rocketsActions.toggleReserved(id));
   };
   return (
@@ -20,9 +18,12 @@ const Rocket = ({
       </div>
       <div>
         <h2>{name}</h2>
-        <p>{description}</p>
-        {!reserved && <button type="button" onClick={toggleHandler}>Reserve Rocket</button>}
-        {reserved && <button type="button" onClick={toggleHandler}>Cancel Reservation</button>}
+        <p>
+          {reserved && <span>Reserved</span>}
+          {description}
+        </p>
+        {!reserved && <button className={classes.book} type="button" onClick={toggleHandler}>Reserve Rocket</button>}
+        {reserved && <button className={classes.cancel} type="button" onClick={toggleHandler}>Cancel Reservation</button>}
 
       </div>
     </section>
