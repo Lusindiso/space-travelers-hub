@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, JoinMission } from '../../redux/missions/missionSlice';
 
-const Missions = () => {
+const MissionsList = () => {
   const dispatch = useDispatch();
   const { missions } = useSelector((state) => state.mission);
   console.log(missions);
@@ -80,4 +80,4 @@ const Missions = () => {
   );
 };
 
-export default Missions;
+export default MissionsList;
