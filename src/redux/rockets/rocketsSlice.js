@@ -15,7 +15,11 @@ const rocketsSlice = createSlice({
         name: rocket.rocket_name,
         description: rocket.description,
         image: rocket.flickr_images,
+        reserved: false,
       }));
+    },
+    toggleReserved(state, action) {
+      state.rockets[action.payload].reserved = !state.rockets[action.payload].reserved;
     },
   },
 });
