@@ -8,7 +8,7 @@ describe('Testing mission component', () => {});
 it('should render correctly Mission component', () => {
   const tree = render(
     <Provider store={store}>
-      <MissionsList />  
+      <MissionsList />
     </Provider>,
 
   );
