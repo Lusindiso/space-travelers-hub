@@ -9,7 +9,7 @@ it('should render correctly Rockets component', () => {
   const tree = render(
     <Provider store={store}>
       <Rockets />
-    </Provider>
+    </Provider>,
   );
   expect(tree).toMatchSnapshot();
 });
