@@ -45,6 +45,7 @@ const missionsSlice = createSlice({
     },
 
   },
+
 });
 
 export const { JoinMission } = missionsSlice.actions;
