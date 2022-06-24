@@ -9,8 +9,8 @@ const MissionsList = () => {
   const missions = useSelector((state) => state.mission);
   console.log(missions);
   useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch, fetchMissions]);
+    if (!missions.length) dispatch(fetchMissions());
+  }, [dispatch]);
 
   const handleMisionReservation = ({ target }) => {
     const { id } = target;
