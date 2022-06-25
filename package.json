@@ -9,6 +9,7 @@
 		"@testing-library/user-event": "^13.5.0",
 		"autoprefixer": "^10.4.7",
 		"bootstrap": "^5.1.3",
+		"npm5": "^5.0.0-beta.69",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.4.0",
