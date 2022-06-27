@@ -2,6 +2,10 @@
 
 >  Space Travelers' Hub is to a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.
 
+## sneak peek
+<img src="images/missions.png" width = 500px>
+<img src="images/rockets.png" width = 500px> <br>
+
 ## Features
 - Uses real live data from the SpaceX API.
 - Book Rockets.
@@ -35,21 +39,19 @@ npm run build
 
 ## Demo App
 
-**live demo** [To be Published.]()
+**live demo** [Space Travelers Hub](https://myelin0.github.io/space-travelers-hub/)
 
 ## Authors
+👤 **Emirjeta Veisllari**
+- GitHub: [@myelin0](https://github.com/myelin0)
+- Twitter: [@Amy_Albania](https://twitter.com/Amy_albania)
+- LinkedIn: [@Emirjeta Veisllari](https://www.linkedin.com/in/emirjeta-veisllari/)
 
 👤 **Lusindiso Ntanjana**
 
 - GitHub: [@Lusindiso](https://github.com/Lusindiso)
 - Twitter: [@LusindisoNt](https://twitter.com/LusindisoNt)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/lusindisontanjana/)
-
-👤 **Emirjeta Veisllari**
-- GitHub: [@myelin0](https://github.com/myelin0)
-- Twitter: [@Amy_Albania](https://twitter.com/Amy_albania)
-- LinkedIn: [
-@Emirjeta Veisllari](https://www.linkedin.com/in/emirjeta-veisllari/)
 
 ## 🤝 Contributing
 
